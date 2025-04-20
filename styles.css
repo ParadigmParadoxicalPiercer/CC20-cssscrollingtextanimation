@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  font-size: 5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border: 2px solid lightskyblue;
+  padding-left: 40px;
+  width: 650px;
+}
+
+.scroll-wrapper {
+  height: 5rem; 
+  overflow: hidden;
+  position: relative;
+}
+
+.scrollredbox {
+  border: 2px solid red;
+  padding-right: 3px;
+}
+
+.scroll-text {
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 10s steps(4) infinite;
+  
+}
+
+.scroll-text div {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-text {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+@keyframes scrollUp {
+  0%, 20% {
+    transform: translateY(0);
+  }
+  25%, 45% {
+    transform: translateY(-5rem);
+  }
+  50%, 70% {
+    transform: translateY(-10rem);
+  }
+  75%, 90% {
+    transform: translateY(-15rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
