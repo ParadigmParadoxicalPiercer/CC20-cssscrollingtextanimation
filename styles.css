@@ -32,8 +32,7 @@ body {
 .scroll-text {
   display: flex;
   flex-direction: column;
-  animation: scrollUp 10s steps(4) infinite;
-  
+  animation: ani1 4s infinite;
 }
 
 .scroll-text div {
@@ -42,22 +41,18 @@ body {
   align-items: center;
 }
 
-.scroll-text {
-  will-change: transform;
-  transform: translateZ(0);
-}
 
-@keyframes scrollUp {
-  0%, 20% {
-    transform: translateY(0);
+@keyframes ani1 {
+  0% {
+    transform: translateY(0px);
   }
-  25%, 45% {
+  25%{
     transform: translateY(-5rem);
   }
-  50%, 70% {
+  50%{
     transform: translateY(-10rem);
   }
-  75%, 90% {
+  75%{
     transform: translateY(-15rem);
   }
   100% {
